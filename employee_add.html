@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="employee_add.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+  <script type="module" src="./employeesAdd.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="employees">
+        <div class="employees__main">
+          <h1 class="employees__title">직원관리</h1>
+          <div class="employees__action__search">
+            <p class="search__total">총 직원수 : </p>
+          </div>
+        </div>
+        <section class="employees__content">
+            <div class="employees__add">
+                <h2 class="employees__add__title">직원 추가하기</h2>
+                <form id="myForm">
+                    <div class="myForm__content">
+                        <div class="content__label">
+                            <label for="name"><p>이름</p></label>
+                            <label for="phoneNum"><p>연락처</p></label>
+                            <label for="position"><p>직급 </p></label>
+                            <label for="email"><p>이메일 </p></label>
+                            <label for="img"><p>사진 </p></label>
+                            
+                        </div>
+                        <div class="content__input">
+                            <input id="name" name="name" type="text" required>
+                            <input id="phoneNum" name="phoneNum" type="text" placeholder="010-****-****" required>
+                            <input id="position" name = "position" type="text" required>
+                            <input id="email" name="email" type="email" required>
+                            <input type="file" id="img" name="img" required>
+                        </div>
+                    </div>
+                    <div class="btn__box">
+                        <button class="btn__addi" type="submit">추가</button>
+                        <button class="btn__cancel">취소</button>
+                    </div>
+                </form>
+                
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+
+  </body>
+</html>

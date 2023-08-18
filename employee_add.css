@@ -1,0 +1,127 @@
+
+.myForm__content {
+    display: flex;
+    margin: 1rem;
+    
+}
+
+
+.employees__add__title {
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(237,239,241);
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 1rem 0 1rem 1rem;
+    text-align: center;
+}
+
+.content__label {
+    padding: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+
+input {
+    border : 2px solid rgb(237,239,241);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    outline: none;
+    margin-bottom: 1rem;
+    max-width: 200px;
+    
+    
+    
+}
+
+.employees__add {
+    border : 2px solid rgb(237,239,241);
+    border-radius: 4px;
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    
+}
+
+#img {
+    font-size: 1rem;
+    display: inline;
+}
+
+.content__label {
+
+}
+
+.content__input {
+    padding: 1rem 0;
+    
+}
+
+.btn__addi {
+    background-color:rgb(4,117,231);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+
+}
+
+.btn__cancel {
+    background-color: rgb(237,239,241);
+    color: rgb(4,117,231);
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+}
+
+.btn__box {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+    :root {
+     font-size: 10px;
+    }
+
+    .employees {
+        padding: 10rem 0;
+       
+    }
+
+    .employees__add {
+        width: 95%;
+        
+    }
+
+    .content__label {
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        padding: 1rem;
+    }
+
+    .content__label > label {
+        font-size: 1.6rem;
+    
+    }
+
+    .content__input {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .content__input > input {
+        font-size: 1.6rem;
+    }
+
+    .search__total {
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+  }

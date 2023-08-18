@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script type="module" src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="employees">
+        <div class="employees__main">
+          <h1 class="employees__title">직원관리</h1>
+          <div class="employees__action__btns">
+            <button class="btn__add">직원 추가</button>
+            <button class="btn__del">직원 삭제</button>
+          </div>
+          <div class="employees__action__search">
+            <p class="search__total">총 직원수 : </p>
+            <input class="search__input" type="text" placeholder="이름으로 검색하기" />
+          </div>
+        </div>
+        <section class="employees__content">
+          <table class="employees__table">
+            <tr class="employees__table__row--header">
+              <th><input type="checkbox" class="checkbox__all"/></th>
+              <th>사진</th>
+              <th>이름</th>
+              <th>사원번호</th>
+              <th>직급</th>
+              <th>전화번호</th>
+              <th>이메일</th>
+            </tr>
+            
+            
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+
+  </body>
+</html>
