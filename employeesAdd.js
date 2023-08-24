@@ -67,7 +67,7 @@ document.querySelector('#myForm').addEventListener("submit",async (e)=>{
 });
 
 document.querySelector('.btn__cancel').addEventListener('click',()=>{
-    window.location.href = '/index.html'
+    window.location.href = './index.html'
 })
 
 

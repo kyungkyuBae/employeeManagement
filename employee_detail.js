@@ -25,8 +25,8 @@ async function selectEmployeeRender (){;
                         </div>
                     </div>
                     <div class="btn__box">
-                    <a class="btn__addi" href="employee_detail_modify.html">수정</a>
-                    <a class="btn__cancel" href="/index.html">취소</a>
+                    <a class="btn__addi" href="./employee_detail_modify.html">수정</a>
+                    <a class="btn__cancel" href="./index.html">취소</a>
                     </div> 
                    `)
         }
